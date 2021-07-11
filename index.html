@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: #8c8c8c"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Curency: GDP
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <nav class="navbar navbar-expand-lg navbar-light float-right">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a
+                    class="nav-item nav-link btn"
+                    style="color: #8c8c8c"
+                    href="#"
+                    >Register</a
+                  >
+                  <a
+                    class="nav-item nav-link btn"
+                    style="color: #8c8c8c"
+                    href="#"
+                    >Sign in</a
+                  >
+                  <div class="nav-item dropdown">
+                    <a
+                      class="nav-item nav-link btn dropdown-toggle"
+                      style="color: #8c8c8c"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      href="#"
+                      ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                      &nbsp empty</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main navbar -->
+
+    <section class="main-header">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"
+              ><img src="images/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style="padding-left: 109px"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >MENS<span class="sr-only">(current)</span></a
+                  >
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="row">
+                      <div class="col-lg-6" style="padding-left: 35px">
+                        <h6>CASUAL</h6>
+                        <ul class="unlisted navc">
+                          <li><a href="">Jackets</a></li>
+                          <li><a href="">Hodies</a></li>
+                          <li><a href="">Polo Shirts</a></li>
+                          <li><a href="">portswear</a></li>
+                          <li><a href="">Tousers & Chinos</a></li>
+                          <li><a href="">T-Shirts</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>Formal</h6>
+                        <ul class="unlisted navc">
+                          <li><a href="">Jackets</a></li>
+                          <li><a href="">Hodies</a></li>
+                          <li><a href="">Polo Shirts</a></li>
+                          <li><a href="">portswear</a></li>
+                          <li><a href="">Tousers & Chinos</a></li>
+                          <li><a href="">T-Shirts</a></li>
+                        </ul>
+                      </div>
+                      <div
+                        class="col-lg-12 text-white text-center"
+                        style="
+                          background-color: #333333;
+                          padding: 27px;
+                          left: 24px;
+                          max-width: 85% !important;
+                        "
+                      >
+                        Autumn sale! <br />
+                        up to 50% off
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >WOMANS<span class="sr-only">(current)</span></a
+                  >
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="row">
+                      <div class="col-lg-6" style="padding-left: 35px">
+                        <h6>CASUAL</h6>
+                        <ul class="unlisted navc">
+                          <li><a href="">Jackets</a></li>
+                          <li><a href="">Hodies</a></li>
+                          <li><a href="">Polo Shirts</a></li>
+                          <li><a href="">portswear</a></li>
+                          <li><a href="">Tousers & Chinos</a></li>
+                          <li><a href="">T-Shirts</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>Formal</h6>
+                        <ul class="unlisted navc">
+                          <li><a href="">Jackets</a></li>
+                          <li><a href="">Hodies</a></li>
+                          <li><a href="">Polo Shirts</a></li>
+                          <li><a href="">portswear</a></li>
+                          <li><a href="">Tousers & Chinos</a></li>
+                          <li><a href="">T-Shirts</a></li>
+                        </ul>
+                      </div>
+                      <div
+                        class="col-lg-12 text-white text-center"
+                        style="
+                          background-color: #333333;
+                          padding: 27px;
+                          left: 24px;
+                          max-width: 85% !important;
+                        "
+                      >
+                        <p>
+                          Autumn sale! <br />
+                          up to 50% off
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">The Brand</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Local Stores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Look Book</a>
+                </li>
+              </ul>
+              <form class="form-inline">
+                <input
+                  class="form-control form-control-sm mr-3 w-75"
+                  type="text"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner">
+      <h1 class="text-white display-4"><b>THE</b> BRAND</h1>
+      <br />
+      <h1 class="text-white">COMPANY SLOGAN GOES HERE</h1>
+    </div>
+
+    <section class="cart_area section_padding">
+      <div class="container">
+        <div class="cart_inner">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="media">
+                      <div class="d-flex">
+                        <img src="images/arrivel_1.png" alt="" />
+                      </div>
+                      <div class="media-body">
+                        <p>Minimalistic shop for multipurpose use</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$360.00</h5>
+                  </td>
+                  <td>
+                    <div class="product_count">
+                      <input
+                        class="input-number"
+                        type="number"
+                        value="1"
+                        min="0"
+                        max="10"
+                        id="quantity"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$720.00</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="media">
+                      <div class="d-flex">
+                        <img src="images/arrivel_2.png" alt="" />
+                      </div>
+                      <div class="media-body">
+                        <p>Minimalistic shop for multipurpose use</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$360.00</h5>
+                  </td>
+                  <td>
+                    <div class="product_count">
+                      <input
+                        class="input-number"
+                        type="number"
+                        value="1"
+                        min="0"
+                        max="10"
+                        id="quantity"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h5>$720.00</h5>
+                  </td>
+                </tr>
+                <tr class="bottom_button">
+                  <td>
+                    <a class="btn_1" href="#">Update Cart</a>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <div class="cupon_text float-right">
+                      <a class="btn_1" href="#">Close Coupon</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <h5>Subtotal</h5>
+                  </td>
+                  <td>
+                    <h5>$2160.00</h5>
+                  </td>
+                </tr>
+                <tr class="shipping_area">
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <h5>Shipping</h5>
+                  </td>
+                  <td>
+                    <div class="shipping_box">
+                      <ul class="list">
+                        <li>
+                          Flat Rate: $5.00
+                          <input
+                            type="radio"
+                            aria-label="Radio button for following text input"
+                          />
+                        </li>
+                        <li>
+                          Free Shipping
+                          <input
+                            type="radio"
+                            aria-label="Radio button for following text input"
+                          />
+                        </li>
+                        <li>
+                          Flat Rate: $10.00
+                          <input
+                            type="radio"
+                            aria-label="Radio button for following text input"
+                          />
+                        </li>
+                        <li class="active">
+                          Local Delivery: $2.00
+                          <input
+                            type="radio"
+                            aria-label="Radio button for following text input"
+                          />
+                        </li>
+                      </ul>
+                      <h6>
+                        Calculate Shipping
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                      </h6>
+                      <select class="shipping_select form-control">
+                        <option value="1">Bangladesh</option>
+                        <option value="2">India</option>
+                        <option value="4">Pakistan</option>
+                      </select>
+                      <select class="shipping_select form-control">
+                        <option value="1">Select a State</option>
+                        <option value="2">Select a State</option>
+                        <option value="4">Select a State</option>
+                      </select>
+
+                      <input
+                        class="post_code"
+                        type="text"
+                        placeholder="Postcode/Zipcode"
+                      />
+                      <a class="btn_1" href="#">Update Details</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="checkout_btn_inner float-right">
+              <a class="btn_1" href="#">Continue Shopping</a>
+              <a class="btn_1 checkout_btn_1" href="#">Proceed to checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="info">
+          <p>Information</p>
+          <ul>
+            <li>The brand</li>
+            <li>Local stores</li>
+            <li>Customer service</li>
+            <li>Privacy & Cookies</li>
+            <li>Site map</li>
+          </ul>
+        </div>
+
+        <div class="why">
+          <p>Why buy from us</p>
+          <ul>
+            <li>Shipping & returns</li>
+            <li>Secure shopping</li>
+            <li>Testimonials</li>
+            <li>Award winning</li>
+            <li>Ethical trading</li>
+          </ul>
+        </div>
+
+        <div class="account">
+          <p>Your account</p>
+          <ul>
+            <li>Sign in</li>
+            <li>Register</li>
+            <li>View cart</li>
+            <li>View your lookbook</li>
+            <li>Track an order</li>
+            <li>Update information</li>
+          </ul>
+        </div>
+
+        <div class="lookbook">
+          <p>Lookbook</p>
+          <ul>
+            <li>Latest posts</li>
+            <li>Men's lookbook</li>
+            <li>Women's lookbook</li>
+            <li>Lookbook RSS feed</li>
+            <li>View your lookbook</li>
+            <li>Delete your lookbook</li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <p>contact details</p>
+          <ul>
+            <li>Head Office: Avenue Fashion, 180-182 Regent Street, London.</li>
+            <li>Telephone: 0123-456-789</li>
+            <li>Email: support@yourwebsite.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="award">
+      <div class="container">
+        <div class="ban text-center">award winner fashion awards 2016</div>
+        <div class="social">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-pinterest" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link"
+                style="color: #8c8c8c"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                © 2016 Avenue Fashion™
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="navbar navbar-expand-lg navbar-light float-right">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item p-2" style="color: #8c8c8c" href="#"
+                    >Design by RobbyDesigns.com</a
+                  >
+                  <a class="nav-item p-2" style="color: #8c8c8c" href="#"
+                    >Dev by Loremipsum.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/bootstrap-input-spinner.js"></script>
+    <script>
+      $("input[type='number']").inputSpinner();
+    </script>
+  </body>
+</html>
